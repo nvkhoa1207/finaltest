@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    
+        <title>Azenly - Sign up</title>
+        <style>
+            *{
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+            body {
+                background: rgb(244, 244, 244);
+            }
+            .row{
+                background: white;
+                border-radius: 30px;
+                box-shadow:12px 12px 22px grey ;
+            }
+            img{
+                border-top-left-radius: 30px;
+                border-bottom-left-radius: 30px;
+            }
+            .btn1{
+              border:none;
+              outline:none;
+              height: 50px;
+              width: 100%;
+                background-color: #000;
+                color: white;
+                border-radius: 4px;
+                font-weight: bold;
+            }
+            .btn1:hover{
+                background-color: #fff;
+                border:1px solid;
+                color: black;
+            }
+            @media (max-width:576px){
+                img{
+                    border-radius: 30px;
+                }
+            }
+        </style>
+</head>
+<body onload="moveTo()">
+    <section class="Form my-4 mx-5">
+        <div class="container">
+            <div class="row no-gutters">
+                <div class="col-lg-5">
+                    <img src="./assets/imgs/alzheimer-disease.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-7 px-5 pt-5">
+                    <h1 class="font-weight-bold py-3">Chào mừng bạn trở lại</h1>
+                    <h4>Đăng nhập</h4>
+                    <form action="">
+                    <div class="form-row">
+                        <div class="col-lg-7">
+                            <input id="user-email" type="email" placeholder="Email-Address" class="form-control my-3 p-4">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-lg-7">
+                            <input id="pass" type="password" placeholder="******" class="form-control ">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-lg-7">
+                            <button onclick="Login()" type="button" class="btn1 mt-3 mb-5">Login</button>
+                        </div>
+                    </div>
+                    <a href="">Quên mật khẩu?</a>
+                    <p>Không có tài khoản? <a href="#">Đăng ký.</a></p>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+<script>
+//==========================================
+    // Check dang nhap
+    // Cho 1 data dang nhap co san
+    const listAccount = [
+        {
+            username:"admin@gmail.com",
+            password:"admin",
+        },
+        {
+            username:"user1@gmail.com",
+            password:"abc123",
+        },
+        {
+            username:"user2@gmail.com",
+            password:"abc456",
+        }
+    ];
+
+    let isLogin = !!localStorage.getItem('username');
+    //let isLogin = 0;
+
+   //if(localStorage.getItem("isLogin")){
+       // isLogin = Number(localStorage.getItem("isLogin"));
+
+    //}
+            // mac dinh user chua dang nhap
+            //kiem tra co key chua, neu co thi true, ko co thi false
+    // có thể chuyển key thành 1, 0 xong cho về number để compare (tránh không compare chuỗi)
+        // Lưu ý là localstorage chỉ lưu chuỗi (string) => Kiểu boolean ko có tác dụng
+        // example: let isLogin = Number(localStorage.getItem('key')) ? 1 : 0; 
+          // dang nhap thanh cong --> chuyen huong sang index
+          function moveTo(){
+            if(isLogin){
+                window.location.href="index.html";
+            }
+        }
+
+        // tao ham de doi chieu nguoi dung dan nhap du lieu co dung ko?
+        function Login(){
+        let username = document.getElementById('user-email').value;
+        let password = document.getElementById('pass').value;
+        let checkLogin = listAccount.some(function(value){
+            return username === value.username && password === value.password;  
+        });
+
+        // xet dk, neu dang nhap dung thi luu du lieu vao trong local storage dong thoi thuc hien chuyen trang
+        if(checkLogin){
+            localStorage.setItem("username",username);
+            isLogin = true;
+           // isLogin = 1;
+            //localStorage.setItem("isLogin",isLogin);
+            moveTo();
+        } else {
+            alert ('Nhập sai tên hoặc password. Vui lòng nhập lại!')
+        }
+        }     
+
+        </script>
+</body>
+</html>

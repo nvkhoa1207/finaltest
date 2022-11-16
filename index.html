@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with LeadMark landing page.">
+    <meta name="author" content="Devcrud">
+    <title>Azenly</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <!-- Bootstrap + LeadMark main styles -->
+	<link rel="stylesheet" href="assets/css/leadmark.css">
+    <link rel="stylesheet" href="/assets/css/anh.css">
+    <style>
+        .displayhidden{
+            display: none;
+        }
+        @media (min-width: 600px) {
+        .column {
+            width: 50%;
+        }
+    }
+    </style>
+   
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+    
+
+    <!-- page Navigation -->
+    <nav class="navbar custom-navbar navbar-expand-md navbar-light fixed-top" data-spy="affix" data-offset-top="10">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+               
+            </a>
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">                     
+                    <li class="nav-item">
+                        <a class="nav-link" href="#service">Trang chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Thông tin</a>
+                    </li>
+                    
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog">Bài báo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Liên hệ</a>
+                    </li>
+                    <li id="login" class="nav-item">
+                        <a id="alogin" href="loginformA.html" class="ml-4 nav-link btn btn-primary btn-sm rounded">Đăng nhập</a>
+                    </li>
+                    <li class="nav-item displayhidden" id="logout" >
+                        <a onclick="logOut(); reloadPage()" href="#" class="ml-2 nav-link btn btn-primary btn-sm rounded">Đăng xuất</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Of Second Navigation -->
+
+    <!-- Page Header -->
+    <header class="header" >
+        <div class="overlay">
+            <h1 class="subtitle" style="color: whitesmoke;">BRING BACK MEMORY</h1>
+            <h1 class="title" style="color: whitesmoke;">AZENLY</h1>  
+        </div>  
+        <div class="shape">
+            <svg viewBox="0 0 1500 200">
+                <path d="m 0,240 h 1500.4828 v -71.92164 c 0,0 -286.2763,-81.79324 -743.19024,-81.79324 C 300.37862,86.28512 0,168.07836 0,168.07836 Z"/>
+            </svg>
+        </div>  
+        <div class="mouse-icon"><div class="wheel"></div></div>
+    </header>
+    <!-- End Of Page Header -->
+
+    <!-- Service Section -->
+    <section  id="service" class="section pt-0">
+        <div class="container">
+            <h6 class="section-title text-center">Nơi dành cho bạn</h6>
+            <h6 class="section-subtitle text-center mb-5 pb-3">Cùng tìm hiểu về bệnh Alzheimer</h6>
+
+            <div class="row">
+                     <!-- Tab items -->
+                     <div class="tabs col-md-6">
+                        <div class="tab-item active">
+                          Khái niệm
+                        </div>
+                        <div class="tab-item">
+                            Triệu chứng
+                        </div>
+                        <div class="tab-item">
+                        Nguyên nhân
+                        </div>
+                    </div>
+                       <!-- Tab content -->
+                    <div class="tab-content" >
+                        <div class="tab-pane active" id="define1">
+                          <h2 >Khái niệm</h2>
+                          <p style="font-size: 25px;">- Bệnh Alzheimer là một trong những căn nguyên phổ biến gây chứng giảm trí nhớ ở người già, bệnh đặc trưng bởi sự mất dần các nơron thần kinh và synap trong vỏ não và một số vùng dưới vỏ. Bệnh có xu hướng nặng dần gây ảnh hưởng xấu tới các hoạt động sinh hoạt hàng ngày, tới trí nhớ, hoạt động ngôn ngữ và tư duy của người bệnh.</p>
+                        </div>
+                        <div class="tab-pane" id="define2">
+                            <h2>Triệu chứng</h2>
+                            <p style="font-size: 25px;">- Thường xuyên cảm thấy khó khăn trong việc nhớ các sự kiện gần đây và gần như không có khả năng tiếp thu thêm thông tin mới.
+                                Giảm sự tập chung, chú ý, thờ ơ với mọi việc.
+                                Giảm các khả năng lập kế hoạch và tư duy trừu tượng.
+                            </p>
+                          </div>
+                        <div class="tab-pane" id="define3">
+                            <h2>Nguyên nhân</h2>
+                            <p style="font-size: 25px;">- Do sự tích tụ của một loại protein ở trong não dẫn đến chết dần các tế bào não.
+                                Quá trình lão hóa gây ra sự phá hủy các myelin làm giảm quá trình dẫn truyền thần kinh, kết quả làm chết các tế bào thần kinh.
+                                Do rối loạn quá trình sản xuất và hoạt động của các chất oxy hóa trong cơ thể.
+                            </p>
+                        </div>       
+                    </div> 
+            </div>       
+        </div>
+    </section>
+    <!-- End OF Service Section -->
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-md-6 pr-md-5 mb-4 mb-md-0">
+                    <h6 class="section-title mb-0">Thông tin về chúng tôi</h6>
+                    <h6 class="section-subtitle mb-4" style="font-size: 25px;"></h6>
+                    <p style="font-size: 20px;">Trang web Azenly được lập bởi các bạn trẻ đến từ Nhóm 7 - MindX với mong muốn giúp đỡ người lớn tuổi có thể tìm hiểu,
+                        ngăn ngừa và có biện pháp kịp thời khi có dấu hiệu suy giảm trí nhớ. </p>
+                    <img src="assets/imgs/about.jpg" alt="" class="w-100 mt-3 shadow-sm">
+                </div>
+                <div class="col-md-6 pl-md-5">
+                    <div class="row">
+                        <div class="col-6">
+                            <img src="assets/imgs/about-1.jpg" alt="" class="w-100 shadow-sm">
+                        </div>
+                        <div class="col-6">
+                            <img src="assets/imgs/about-2.jpg" alt="" class="w-100 shadow-sm">
+                        </div>
+                        <div class="col-12 mt-4" style="font-size: 20px;">
+                            <p style="font-size: 20px;">Với mong ước đưa các bệnh nhân gần lại nhau hơn, chúng tôi hi vọng bạn sẽ đón nhận Azenly 1 cách tích cực</p>
+                            <br>Chúng tôi mong muốn có được sự kết nối với nhiều bác sĩ để giúp cho những bệnh nhân có cái nhìn tổng quan về căn bệnh họ đang mắc phải.
+                            <p><b></b><br>
+                            </p>
+                            <p> </p>
+                        </div>
+                    </div>
+                </div>
+            </div>              
+        </div>
+    </section>
+
+
+    <!-- Blog Section -->
+    <section class="section" id="blog">
+        <div class="container">
+            <h6 class="section-title mb-0 text-center">Những bài báo về bệnh Azheimer</h6>
+            <h6 class="section-subtitle mb-5 text-center" style="font-size: 20px;">Tìm hiểu</h6>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card border-0 mb-4">
+                        <img src="assets/imgs/blog-1.jpg" alt="" class="card-img-top w-100">
+                        <div class="card-body">                         
+                            <h6 class="card-title">Tìm hiểu về Azheimer</h6>
+                            <p>Hãy cùng đi sâu vào căn bệnh nan giải cho người cao tuổi ...</p>
+                            <a href="https://www.alz.org/asian/about/what_is_alzheimers.asp?nL=VI&dL=VI" class="smallText-muted">Đọc thêm</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 mb-4">
+                        <img src="assets/imgs/blog-2.jpg" alt="" class="card-img-top w-100">
+                        <div class="card-body">                         
+                            <h6 class="card-title"> Alzheimer-căn bệnh thế kỷ</h5>
+                            <p>Bệnh mang tên của người tìm ra nó - Giáo sư Thần kinh học người Đức Alois Alzheimer (1864-1915), đã phát hiện ra căn bệnh này trong giai đoạn...</p>
+                            <a href="https://cand.com.vn/Khoa-hoc-Ky-thuat-hinh-su/Alzheimer-Can-benh-cua-the-ky-XXI-i396984/#:~:text=Alzheimer%20ch%C3%ADnh%20l%C3%A0%20%22m%E1%BB%99t%20c%C6%A1n,d%E1%BA%A7n%20%E1%BB%9F%20v%C3%B9ng%20s%E1%BB%8D%20n%C3%A3o%E2%80%A6" class="smallText-muted">Đọc thêm</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 mb-4">
+                        <img src="assets/imgs/blog-3.jpg" alt="" class="card-img-top w-100">
+                        <div class="card-body">                         
+                            <h6 class="card-title">Cộng đồng Alzheimer</h6>
+                            <p>CLB Hỗ trợ người chăm sóc bệnh nhân Sa sút trí tuệ/Alzheimer
+                            </p>
+                            <a href="https://www.facebook.com/groups/CLB.ho.tro.nguoi.cham.soc.BN.SSTT.Alzheimer/" class="smallText-muted">Tham gia</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of Blog Section -->
+
+    <!-- Testmonial Section -->
+    <section class="section" id="testmonial">
+        <div class="container">
+            <h6 class="section-title text-center mb-0">HỎI ĐÁP</h6>
+            <h6 class="section-subtitle mb-5 text-center">Các chuyên gia nói gì ?</h6>
+            <div class="row">
+                <div class="col-md-4 my-3 my-md-0">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="media align-items-center mb-3">
+                                <img class="mr-3" src="https://wd.vghtpe.gov.tw/manage/upload/teacher/thumbnails/img_1499302678059.jpg" alt="">
+                                <div class="media-body">
+                                    <h6 class="mt-1 mb-0"> Đinh Vinh Quang</h6>
+                                    <small class="text-muted mb-0">Bác sĩ</small>     
+                                </div>
+                            </div>
+                            <p class="mb-0">Hiện nay, bệnh lý Alzheimer chỉ có thể được điều trị làm cho chậm lại chứ chưa có phương pháp chữa khỏi. Nếu nói về điều trị, ta dùng thuốc kháng men.
+                                Trong quá trình điều trị, ta có thể tham gia các câu lạc bộ ngoài trời, giao tiếp, chơi cờ thậm chí đọc sách, hoặc ngoại ngữ... Những hoạt động đó sẽ giúp chúng ta làm chậm lại sự lão hóa của não.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 my-3 my-md-0">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="media align-items-center mb-3">
+                                <img class="mr-3" src="https://th.bing.com/th/id/R.11828aee5f0d44da832b41380f474d3f?rik=UgZslLFIcV9JFw&riu=http%3a%2f%2fs1.img.yan.vn%2fYanNews%2f2167221%2f201701%2f20170110-085358-9-1483932467686_553x577.jpg&ehk=L%2fpFZXiu8%2bWxozBU9Kwz8w0lALpqsOx6qU%2bD9xYTwCU%3d&risl=&pid=ImgRaw&r=0" alt="">
+                                <div class="media-body">
+                                    <h6 class="mt-1 mb-0">Nguyễn Thị Phương Thảo</h6>
+                                    <small class="text-muted mb-0">Bác sĩ chuyên khoa</small>      
+                                </div>
+                            </div>
+                            <p class="mb-0">Đây là một căn bệnh rất phức tạp và không thể điều trị khỏi hoàn toàn bằng việc dùng thuốc hoặc biện pháp can thiệp nào khác. Những cách tiếp cận hiện tại tập trung vào việc giúp mọi người duy trì chức năng tâm thần, quản lý các triệu chứng hành vi và làm chậm một số vấn đề, chẳng hạn như mất trí nhớ. Các nhà nghiên cứu vẫn đang nỗ lực phát triển các liệu pháp nhắm vào các cơ chế di truyền, phân tử và tế bào cụ thể để có thể ngăn chặn nguyên nhân cơ bản gây bệnh.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 my-3 my-md-0">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="media align-items-center mb-3">
+                                <img class="mr-3" src="https://m-hospital.com/wp-content/uploads/2020/03/Dr-Jumma.jpg" alt="">
+                                <div class="media-body">
+                                    <h6 class="mt-1 mb-0">Bùi Ngọc Phương Hòa</h6>
+                                    <small class="text-muted mb-0">Thạc sĩ, Bác sĩ</small>        
+                                </div>
+                            </div>
+                            <p class="mb-0">Nghiên cứu về bệnh Alzheimer đã phát triển đến mức các nhà khoa học đang tìm cách để trì hoãn hoặc ngăn ngừa căn bệnh này cũng như điều trị các triệu chứng của nó. Trong các thử nghiệm lâm sàng đang diễn ra do NIA hỗ trợ, các nhà khoa học đang phát triển và thử nghiệm một số biện pháp can thiệp khả thi. Một số nghiên cứu về các liệu pháp điều trị bằng thuốc nhằm vào nhiều mục tiêu khác nhau, bao gồm protein beta-amyloid, chức năng mạch máu não, mất khớp thần kinh và các chất dẫn truyền thần kinh cụ thể, cũng như các can thiệp chẳng hạn như hoạt động thể chất, chế độ ăn uống, rèn luyện nhận thức và sự kết hợp của những các phương pháp tiếp cận.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of Testmonial Section -->
+
+    <!-- Contact Section -->
+    <!-- Contact Section -->
+        <section id="contact" class="section has-img-bg pb-0">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-5 my-3">
+                            <h6 class="mb-0">Điện thoại</h6>
+                            <p class="mb-4">+ 123-456-7890</p>
+        
+                            <h6 class="mb-0">Địa chỉ</h6>
+                            <p class="mb-4">NHÓM 7 MINDX</p>
+        
+                            <h6 class="mb-0">Email</h6>
+                            <p class="mb-0">mindblow@gmail.com</p>
+                            <p></p>
+                        </div>
+                        <div class="col-md-7">
+                            <form action="" method="">
+                                <h4 class="mb-4">ĐIỀU BẠN MUỐN NÓI VỚI CHÚNG TÔI</h4>
+                                <div class="form-row">
+                                    <div class="form-group col-sm-4">
+                                        <input id="name" type="text" class="form-control text-white rounded-0 bg-transparent" name="name" placeholder="Họ và tên">
+                                        <div class="error-mess"></div>
+                                    </div>
+                                    <div class="form-group col-sm-4">
+                                        <input id="email" type="email" class="form-control text-white rounded-0 bg-transparent" name="Email" placeholder="Email">
+                                        <div class="error-mess"></div>
+                                    </div>
+                                    <div class="form-group col-sm-4">
+                                        <input id="subject" type="text" class="form-control text-white rounded-0 bg-transparent" name="subject" placeholder="Chủ đề">
+                                        <div class="error-mess"></div>
+                                    </div>
+                                    <div class="form-group col-12">
+                                        <textarea id="message" name="message" id="" cols="30" rows="4" class="form-control text-white rounded-0 bg-transparent" placeholder="Lời nhắn"></textarea>
+                                        <div class="error-mess"></div>    
+                                    </div>
+                                    <div class="form-group col-12 mb-0">
+                                        <button onclick="subMess(); event.preventDefault()" type="submit" class="btn btn-primary rounded w-md mt-3">Gửi</button>
+                                    </div>                          
+                            </form>        
+                        </div>
+                    </div>
+                    <!-- Page Footer -->
+            <!-- Page Footer -->
+            <footer class="mt-5 py-4 border-top border-secondary">
+                <!-- <p class="mb-0 small">&copy; <script>document.write(new Date().getFullYear())</script>, LeadMark Created By <a href="https://www.devcrud.com" target="_blank">DevCrud.</a>  All rights reserved </p>      -->
+            </footer>
+            <!-- End of Page Footer -->  
+        </div>
+    </section>
+	
+	<!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap 3 affix -->
+	<script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- Isotope -->
+    <script src="assets/vendors/isotope/isotope.pkgd.js"></script>
+
+    <!-- LeadMark js -->
+    <script src="assets/js/leadmark.js"></script>
+  
+  
+</body>
+</html>
